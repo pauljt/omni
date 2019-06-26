@@ -1,0 +1,4 @@
+extraction:
+  cpp:
+    after_prepare:
+      - find . -name "*.jsm" -exec sh -c 'mv "$1" "${1%.jsm}.jsm.js"' _ {} \;
